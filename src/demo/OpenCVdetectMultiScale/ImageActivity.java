@@ -331,7 +331,7 @@ public class ImageActivity extends Activity implements CvCameraViewListener2 {
 		
 		MatOfRect faces = new MatOfRect();
 		
-		mJavaDetector.detectMultiScale(rgba, faces, scaleFactor, minNeighbors, flags, // TODO: objdetect.CV_HAAR_SCALE_IMAGE
+		mJavaDetector.detectMultiScale(rgba, faces, scaleFactor, minNeighbors, flags, 
                 new Size(minSize, minSize), new Size());
 
 		Rect[] facesArray = faces.toArray();
